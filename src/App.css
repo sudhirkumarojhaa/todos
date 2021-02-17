@@ -1,0 +1,61 @@
+.app {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0c9, transparent);
+}
+
+h5{
+  margin-bottom: 0 !important;
+}
+
+.search,.btn {
+  border: 0;
+  border-radius:0 ;
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.list {
+  margin-top: 100px;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+/* .list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+} */
+
+span {
+  font-size: 0.75rem;
+}
+
+.btn:active,
+.btn:focus,
+.form-control:active,
+.form-control:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.search::placeholder {
+  color: #000;
+}
+
+
+.bg{
+  background: linear-gradient(90deg, #0c9, transparent);
+}
+
+.mob {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .web {
+    display: none;
+  }
+  .mob {
+    display: block;
+  }
+}
