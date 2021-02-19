@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/todos/static/css/main.c0d7d2a6.chunk.css",
-    "main.js": "/todos/static/js/main.dbb40f9e.chunk.js",
-    "main.js.map": "/todos/static/js/main.dbb40f9e.chunk.js.map",
+    "main.css": "/todos/static/css/main.8ca996d1.chunk.css",
+    "main.js": "/todos/static/js/main.d4cb1f65.chunk.js",
+    "main.js.map": "/todos/static/js/main.d4cb1f65.chunk.js.map",
     "runtime-main.js": "/todos/static/js/runtime-main.a8922d42.js",
     "runtime-main.js.map": "/todos/static/js/runtime-main.a8922d42.js.map",
     "static/js/2.192a8aff.chunk.js": "/todos/static/js/2.192a8aff.chunk.js",
@@ -12,14 +12,14 @@
     "index.html": "/todos/index.html",
     "service-worker.js": "/todos/service-worker.js",
     "service-worker.js.map": "/todos/service-worker.js.map",
-    "static/css/main.c0d7d2a6.chunk.css.map": "/todos/static/css/main.c0d7d2a6.chunk.css.map",
+    "static/css/main.8ca996d1.chunk.css.map": "/todos/static/css/main.8ca996d1.chunk.css.map",
     "static/js/2.192a8aff.chunk.js.LICENSE.txt": "/todos/static/js/2.192a8aff.chunk.js.LICENSE.txt",
     "static/media/task.18a72958.png": "/todos/static/media/task.18a72958.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a8922d42.js",
     "static/js/2.192a8aff.chunk.js",
-    "static/css/main.c0d7d2a6.chunk.css",
-    "static/js/main.dbb40f9e.chunk.js"
+    "static/css/main.8ca996d1.chunk.css",
+    "static/js/main.d4cb1f65.chunk.js"
   ]
 }
