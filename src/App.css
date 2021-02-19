@@ -1,30 +1,28 @@
 .app {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(90deg, #0c9, transparent);
+  background: #fff;
 }
-
 h5{
   margin-bottom: 0 !important;
 }
-
 .search,.btn {
   border: 0;
   border-radius:0 ;
   color: #000 !important;
   font-weight: bold;
+  border-bottom: 0.7px solid #333;
 }
-
 .list {
   margin-top: 100px;
-  height: 50vh;
+  height: 70vh;
   overflow-y: scroll;
 }
 
-/* .list::-webkit-scrollbar {
+.list::-webkit-scrollbar {
     width: 0;
     height: 0;
-} */
+}
 
 span {
   font-size: 0.75rem;
@@ -44,18 +42,36 @@ span {
 
 
 .bg{
-  background: linear-gradient(90deg, #0c9, transparent);
+  background:#fff;
+}
+
+.listItem{
+  box-shadow: 0 2px 5px 2px rgb(121 124 148 / 18%);
+  border-radius: 5px;
+  margin: 20px 0;
 }
 
 .mob {
   display: none;
 }
 
+.btn{
+  background: linear-gradient(90deg,#e6003c,#f51553);
+  color: #fff !important;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  width: 200px;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+
 @media screen and (max-width: 768px){
   .web {
     display: none;
   }
   .mob {
-    display: block;
+    display: flex;
   }
 }

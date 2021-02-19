@@ -47,24 +47,24 @@ function App() {
     <div className="app">
       <div className="web">
       <div className="p-4 fixed-top bg">
-       <Form className="d-flex w-100">
+       <Form className="d-flex w-100 container">
           <Form.Control
-            className="search w-75"
+            className="search w-90"
             placeholder="Add your tasks here..."
             onChange={e=>{
               setText(e.target.value);
               setError(false)}}
             maxLength="30"/>
-          <Button variant="light" size="sm" onClick={saveList} className="w-25">
+          <Button onClick={saveList} className="btn">
              Submit
           </Button>
         </Form>
       </div>
       <div className="container list">
-      {error?<div class="text-center font-weight-bold text-danger my-2">Please add a task first.</div> : null}
+      {error?<div class="text-center font-weight-bold text-danger my-2"><span>Please add a task first.</span></div> : null}
         {list.length !== 0 ?
           list.map((item,index)=>
-          <div key={item.key} className="d-flex justify-content-between align-items-center flex-wrap bg-white my-2 p-3">
+          <div key={item.key} className="d-flex justify-content-between align-items-center flex-wrap listItem p-3">
             <h5 className="font-weight-bold">{item.text}</h5>
             <div className="d-flex justify-content-end">
               <span>{moment.unix(item.key).format("DD MMM, YYYY")}</span>
@@ -74,14 +74,14 @@ function App() {
           </div>
       ) :
       <div className="d-flex flex-column justify-content-center align-items-center">
-        <img src={img} className="w-50 h-50 mt-5" alt="No tasks found."/>
+        <img src={img} className="w-25 h-25 mt-5" alt="No tasks found."/>
       </div>}
-      {list.length!==0 ?<h5 className="fixed-bottom p-5">#{list.length} task(s) pending</h5>: null}
-     </div>
-     <div className="d-flex list justify-content-center align-items-center">
-      <p className="font-weight-bold mob">This site is available for desktop view only.</p>
+      {list.length!==0 ?<h6 className="fixed-bottom p-5">#{list.length} task(s) pending</h6>: null}
      </div>
     </div>
+    <div className="list justify-content-center align-items-center mob">
+      <p className="font-weight-bold ">This site is available for desktop view only.</p>
+     </div>
     </div>
   );
 }
